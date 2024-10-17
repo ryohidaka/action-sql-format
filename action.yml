@@ -16,3 +16,6 @@ runs:
     - name: Set GitHub Path
       run: echo "GITHUB_ACTION_PATH=${GITHUB_ACTION_PATH}" >> $GITHUB_ENV
       shell: bash
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
