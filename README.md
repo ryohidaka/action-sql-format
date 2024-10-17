@@ -1,12 +1,9 @@
-# composite-action-template
+# action-sql-format
 
-[![GitHub Release](https://img.shields.io/github/v/release/ryohidaka/composite-action-template)](https://github.com/ryohidaka/composite-action-template/releases/)
-[![Test Action](https://github.com/ryohidaka/composite-action-template/actions/workflows/test.yml/badge.svg)](https://github.com/ryohidaka/composite-action-template/actions/workflows/test.yml)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Release](https://img.shields.io/github/v/release/ryohidaka/action-sql-format)](https://github.com/ryohidaka/action-sql-format/releases/)
+[![Test Action](https://github.com/ryohidaka/action-sql-format/actions/workflows/test.yml/badge.svg)](https://github.com/ryohidaka/action-sql-format/actions/workflows/test.yml)
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B6TVH92)
-
-Template to create composite-action for GitHub Actions.
+GitHub Actions to formats SQL using sql-formatter.
 
 ## Usage
 
@@ -20,7 +17,7 @@ jobs:
   bump-uses:
     runs-on: ubuntu-latest
     steps:
-      - uses: ryohidaka/composite-action-template@v0.3.1
+      - uses: ryohidaka/action-sql-format@v1
         with:
           who-to-greet: "Mona the Octocat"
 

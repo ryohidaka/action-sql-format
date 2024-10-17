@@ -1,7 +1,13 @@
-# https://docs.github.com/en/actions/sharing-automations/creating-actions/creating-a-composite-action
+name: "action-sql-format"
 
-name: "Hello World"
-description: "Greet someone"
+author: "ryohidaka"
+
+description: "GitHub Actions to formats SQL using sql-formatter."
+
+branding:
+  color: green
+  icon: send
+
 inputs:
   who-to-greet: # id of input
     description: "Who to greet"
@@ -11,6 +17,7 @@ outputs:
   random-number:
     description: "Random number"
     value: ${{ steps.random-number-generator.outputs.random-number }}
+
 runs:
   using: "composite"
   steps:
