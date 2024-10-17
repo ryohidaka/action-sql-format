@@ -14,6 +14,11 @@ inputs:
     required: false
     default: "."
 
+  config:
+    description: "Additional path to config JSON file or json string for sql-formatter (e.g. language, tab-width, etc.)"
+    required: false
+    default: ""
+
   # commit options
   commit-user-name:
     required: false
@@ -51,7 +56,9 @@ runs:
 
     - name: Format SQL files
       run: |
-        $GITHUB_ACTION_PATH/scripts/format.sh "${{ inputs.path }}"
+        $GITHUB_ACTION_PATH/scripts/format.sh \
+          "${{ inputs.path }}" \
+          "${{ inputs.config }}"
       shell: bash
 
     - name: Commit and Push
