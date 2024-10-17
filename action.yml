@@ -14,6 +14,27 @@ inputs:
     required: false
     default: "."
 
+  # commit options
+  commit-user-name:
+    required: false
+    default: "GitHub Actions"
+    description: "Commit username. Defaults to 'GitHub Actions'."
+
+  commit-user-email:
+    required: false
+    default: "actions@github.com"
+    description: "Commit email. Defaults to 'actions@github.com'."
+
+  commit-message:
+    required: false
+    default: "chore: Format SQL files"
+    description: "Commit message. Defaults to 'chore: Format SQL files'."
+
+  dry-run:
+    description: "If true, the commit and push steps will be skipped."
+    required: false
+    default: "false"
+
 runs:
   using: "composite"
   steps:
@@ -32,3 +53,12 @@ runs:
       run: |
         $GITHUB_ACTION_PATH/scripts/format.sh "${{ inputs.path }}"
       shell: bash
+
+    - name: Commit and Push
+      uses: ryohidaka/action-commit-push@v0.3.0
+      with:
+        files: "${{ inputs.path }}"
+        commit-user-name: "${{ inputs.commit-user-name }}"
+        commit-user-email: "${{ inputs.commit-user-email }}"
+        commit-message: "${{ inputs.commit-message }}"
+        dry-run: ${{ inputs.dry-run }}

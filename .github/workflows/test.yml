@@ -27,6 +27,7 @@ jobs:
       - uses: "./"
         with:
           path: "."
+          dry-run: true
 
       - name: Check formatted SQL file
         run: cat dirty.sql

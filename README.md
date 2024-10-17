@@ -20,10 +20,18 @@ jobs:
       - uses: ryohidaka/action-sql-format@v1
         with:
           path: "sql"
+          commit-user-name: "GitHub Actions"
+          commit-user-email: "actions@github.com"
+          commit-message: "chore: Format SQL files"
+          dry-run: false
 ```
 
 ## Inputs
 
-| Input  | Description                             | Required | Default |
-| ------ | --------------------------------------- | -------- | ------- |
-| `path` | Directory path to format shell scripts. |          | `.`     |
+| Input               | Description                                         | Default                   |
+| ------------------- | --------------------------------------------------- | ------------------------- |
+| `path`              | Directory path to format shell scripts.             | `.`                       |
+| `commit-user-name`  | Commit username.                                    | `GitHub Actions`          |
+| `commit-user-email` | Commit email.                                       | `actions@github.com`      |
+| `commit-message`    | Commit message.                                     | `chore: Format SQL files` |
+| `dry-run`           | If true, the commit and push steps will be skipped. | `false`                   |
