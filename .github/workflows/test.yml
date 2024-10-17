@@ -28,3 +28,6 @@ jobs:
         with:
           path: "."
           config: '{"linesBetweenQueries": 0}'
+
+      - name: Check data
+        run: cat dirty.sql
