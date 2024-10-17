@@ -1,0 +1,16 @@
+name: Bump Uses
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  bump-uses:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ryohidaka/action-bump-uses@v0.3.1

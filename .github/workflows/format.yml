@@ -1,0 +1,22 @@
+name: Format
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: ShellScript Formatter
+        uses: ryohidaka/action-sh-format@v0.4.0
+        with:
+          path: "./scripts"
