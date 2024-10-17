@@ -19,3 +19,7 @@ runs:
 
     - name: Setup Node.js
       uses: actions/setup-node@v4
+
+    - name: Install sql-formatter
+      run: npm install -g sql-formatter
+      shell: bash
