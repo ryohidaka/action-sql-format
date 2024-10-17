@@ -9,6 +9,10 @@ branding:
   icon: send
 
 inputs:
+  path:
+    description: "Directory path to format SQL files."
+    required: false
+    default: "."
 
 runs:
   using: "composite"
@@ -22,4 +26,9 @@ runs:
 
     - name: Install sql-formatter
       run: npm install -g sql-formatter
+      shell: bash
+
+    - name: Format SQL files
+      run: |
+        $GITHUB_ACTION_PATH/scripts/format.sh "${{ inputs.path }}"
       shell: bash

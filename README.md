@@ -19,10 +19,11 @@ jobs:
     steps:
       - uses: ryohidaka/action-sql-format@v1
         with:
+          path: "sql"
 ```
 
 ## Inputs
 
-| Input | Description | Required | Default |
-| ----- | ----------- | -------- | ------- |
-|       |             |          |         |
+| Input  | Description                             | Required | Default |
+| ------ | --------------------------------------- | -------- | ------- |
+| `path` | Directory path to format shell scripts. |          | `.`     |
