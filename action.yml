@@ -5,8 +5,8 @@ author: "ryohidaka"
 description: "GitHub Actions to formats SQL using sql-formatter."
 
 branding:
-  color: green
-  icon: send
+  color: yellow
+  icon: check-circle
 
 inputs:
   path:
