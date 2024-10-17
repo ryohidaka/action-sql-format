@@ -4,7 +4,7 @@
 [![Test Action](https://github.com/ryohidaka/action-sql-format/actions/workflows/test.yml/badge.svg)](https://github.com/ryohidaka/action-sql-format/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-GitHub Actions to formats SQL using sql-formatter.
+GitHub Actions to formats SQL using [sql-formatter](https://www.npmjs.com/package/sql-formatter).
 
 ## Usage
 
