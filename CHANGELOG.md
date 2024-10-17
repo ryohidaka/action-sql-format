@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/ryohidaka/action-sql-format/compare/v0.1.0...v0.1.1) (2024-10-17)
+
+
+### Bug Fixes
+
+* Change action name. ([ec33da8](https://github.com/ryohidaka/action-sql-format/commit/ec33da89d5729b6bc5ac1875f9e6b66df3b4e544))
+
 ## 0.1.0 (2024-10-17)
 
 
