@@ -62,7 +62,7 @@ runs:
       shell: bash
 
     - name: Commit and Push
-      uses: ryohidaka/action-commit-push@v0.3.0
+      uses: ryohidaka/action-commit-push@v0.3.2
       with:
         files: "${{ inputs.path }}"
         commit-user-name: "${{ inputs.commit-user-name }}"
