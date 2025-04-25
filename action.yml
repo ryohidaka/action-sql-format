@@ -22,13 +22,13 @@ inputs:
   # commit options
   commit-user-name:
     required: false
-    default: "GitHub Actions"
-    description: "Commit username. Defaults to 'GitHub Actions'."
+    default: "github-actions[bot]"
+    description: "Commit username. Defaults to 'github-actions[bot]'."
 
   commit-user-email:
     required: false
-    default: "actions@github.com"
-    description: "Commit email. Defaults to 'actions@github.com'."
+    default: "41898282+github-actions[bot]@users.noreply.github.com"
+    description: "Commit email. Defaults to '41898282+github-actions[bot]@users.noreply.github.com'."
 
   commit-message:
     required: false
