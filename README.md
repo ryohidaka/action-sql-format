@@ -18,7 +18,7 @@ jobs:
   format-sql:
     runs-on: ubuntu-latest
     steps:
-      - uses: ryohidaka/action-sql-format@v0.1.1
+      - uses: ryohidaka/action-sql-format@v0.2.0
         with:
           path: "sql"
           config: '{"language": "spark", "tabWidth": 2}'
