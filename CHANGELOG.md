@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/action-sql-format/compare/v0.1.1...v0.2.0) (2025-04-25)
+
+
+### Features
+
+* Change default commit-user-name and commit-user-email. ([9ed61dd](https://github.com/ryohidaka/action-sql-format/commit/9ed61dd4ba82fc7de686634ba6f84a04ed2ba8d8))
+
 ## [0.1.1](https://github.com/ryohidaka/action-sql-format/compare/v0.1.0...v0.1.1) (2024-10-17)
 
 
